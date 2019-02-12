@@ -17,7 +17,7 @@
 AccelStepper stepper1(HALFSTEP, motorPin1, motorPin3, motorPin2, motorPin4);
 
 void setup() {
-  delay(1000); // delay 8 sec (8000ms)
+  delay(8000); // delay 8 sec (8000ms)
   pinMode(A1, INPUT);
   randomSeed(analogRead(5));
   
