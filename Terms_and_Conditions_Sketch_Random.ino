@@ -33,8 +33,8 @@ void setup() {
   int  val = 0; //don't touch
   int  threshold = 11;  // 5mv * threshold = trigger voltage
                         // set between 0 and 1023 
-                        // high enough to not get noise
-                        // low enough for pickup
+                        // high enough to not get noise, 138 for preamp
+                        // low enough for pickup, 11- 90 for passive
   while (val < threshold) {
     val = analogRead(pluckPin); 
     stepper1.runSpeed(); 
